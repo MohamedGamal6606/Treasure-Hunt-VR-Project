@@ -15,19 +15,10 @@ public class SettingsMenuToggle : MonoBehaviour
         }
     }
 
-    void ToggleMenu()
+   public void ToggleMenu()
     {
-        bool isActive = !settingsCanvas.activeSelf;
-        settingsCanvas.SetActive(isActive);
+        
+        settingsCanvas.SetActive(!settingsCanvas.activeSelf);
 
-        // Optional: Disable interaction when menu is open
-        if (interactionManager != null)
-        {
-            interactionManager.enabled = !isActive;
-        }
-
-        // Optional: unlock/lock cursor for simulator
-        Cursor.lockState = isActive ? CursorLockMode.None : CursorLockMode.Locked;
-        Cursor.visible = isActive;
     }
 }
