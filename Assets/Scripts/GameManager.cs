@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public List<string> isTorchLit = new List<string>();
     public GameObject flintlock;
     private bool isSolved = false;
+    public KnockoutTarget[] targets;      // Assign all dummies in Inspector
+    public GameObject winObject;          // GameObject to activate when all hit
     // Update is called once per frame
     void Update()
     {
@@ -19,12 +21,20 @@ public class GameManager : MonoBehaviour
 
 
 
-
     }
 
     void showFlintlock()
     {
         flintlock.SetActive(true);
+    }
+    public void OnTargetKnockedOut()
+    {
+        foreach (KnockoutTarget target in targets)
+        {
+            if (!target.IsKnockedOut) return;
+        }
+
+        winObject.SetActive(true);
     }
 
 }
