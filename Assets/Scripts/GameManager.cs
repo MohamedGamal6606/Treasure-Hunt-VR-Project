@@ -5,18 +5,26 @@ public class GameManager : MonoBehaviour
 {
     
     public List<string> isTorchLit = new List<string>();
-
+    public GameObject flintlock;
+    private bool isSolved = false;
     // Update is called once per frame
     void Update()
     {
-        if (isTorchLit.Count == 3)
+
+        if (!isSolved && isTorchLit.Count == 3)
         {
-            Debug.Log("All torches are lit! Puzzle solved!");
-            // You can add additional logic here, such as opening a door or triggering an event.
+            isSolved = true;
+            showFlintlock();
         }
 
 
 
 
     }
+
+    void showFlintlock()
+    {
+        flintlock.SetActive(true);
+    }
+
 }
