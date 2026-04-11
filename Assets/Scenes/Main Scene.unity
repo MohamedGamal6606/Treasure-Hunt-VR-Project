@@ -6743,6 +6743,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cae80e7e19b93014d81c2b7b4e200e69, type: 3}
+--- !u!1 &704438126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704438128}
+  - component: {fileID: 704438127}
+  m_Layer: 0
+  m_Name: WinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &704438127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704438126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8700024428bfb194a85fcf36f6048eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  isGameWon: 0
+  isShipWon: 0
+  isIslandWon: 0
+  isCaveWon: 0
+--- !u!4 &704438128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704438126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.12447, y: -0, z: -3.26024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &705902021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23908,10 +23956,6 @@ MonoBehaviour:
   - {fileID: 1506574913}
   - {fileID: 637029549}
   winObject: {fileID: 821115582}
-  isGameWon: 0
-  isShipWon: 0
-  isIslandWon: 0
-  isCaveWon: 0
   Chest: {fileID: 241089931}
 --- !u!4 &1607354347
 Transform:
@@ -28922,3 +28966,4 @@ SceneRoots:
   - {fileID: 1737262126}
   - {fileID: 165962587}
   - {fileID: 1901287049}
+  - {fileID: 704438128}

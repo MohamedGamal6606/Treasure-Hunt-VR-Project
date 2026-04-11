@@ -9,11 +9,8 @@ public class GameManager : MonoBehaviour
     private bool isSolved = false;
     public KnockoutTarget[] targets;      // Assign all dummies in Inspector
     public GameObject winObject;          // GameObject to activate when all hit
-    public bool isGameWon = false;
-    public bool isShipWon = false;
-    public bool isIslandWon = false;
-    public bool isCaveWon = false;
     public GameObject Chest;
+
 
     // Update is called once per frame
     void Update()
@@ -25,9 +22,8 @@ public class GameManager : MonoBehaviour
             showFlintlock();
         }
 
-        if(!isGameWon && isShipWon && isIslandWon && isCaveWon)
+        if(WinManager.Instance.isGameWon)
         {
-            isGameWon = true;
             Chest.SetActive(true);
         }
 
@@ -47,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
 
         winObject.SetActive(true);
-        isIslandWon = true;
+        WinManager.Instance.isIslandWon = true;
     }
 
 
