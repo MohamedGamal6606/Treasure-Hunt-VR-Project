@@ -33,7 +33,7 @@ public class WinManager : MonoBehaviour
         if(isShipWon && isIslandWon && isCaveWon)
         {
                         isGameWon = true;
-                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Main Menu"));
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("End Scene"));
         }
     }
 }

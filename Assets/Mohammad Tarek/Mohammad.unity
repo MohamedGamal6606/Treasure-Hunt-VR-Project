@@ -447,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &311385272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0b2f56461dab72743b5e4aee7533c011, type: 3}
   - {fileID: 8300000, guid: 750e148184dc1f748a0ccec674a66858, type: 3}
   - {fileID: 8300000, guid: 6e52a31b6962f5c4a8ce5ae0b86b136f, type: 3}
-  interval: 10
+  interval: 5
 --- !u!82 &311385277
 AudioSource:
   m_ObjectHideFlags: 0
@@ -615,7 +615,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1464,13 +1464,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: -4.999995, y: 0}
   m_SizeDelta: {x: -10, y: 0}
-=======
-  m_AnchoredPosition: {x: -2.6, y: 0}
-  m_SizeDelta: {x: -5.2, y: 0}
->>>>>>> main
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623098021
 MonoBehaviour:
@@ -2248,6 +2243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SettingsMenuToggle
   settingsCanvas: {fileID: 831472185}
   interactionManager: {fileID: 1711321631}
+  triggerAction: {fileID: -8069514856583376848, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
 --- !u!1 &895682359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,13 +3193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: -4.999995, y: 0}
   m_SizeDelta: {x: -10, y: 0}
-=======
-  m_AnchoredPosition: {x: -2.04, y: 0}
-  m_SizeDelta: {x: -4.09, y: 0}
->>>>>>> main
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257284528
 MonoBehaviour:

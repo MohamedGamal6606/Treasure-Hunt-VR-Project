@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ship.unity
     guid: 2f3ba80ffa06a5d468f86f33a85db6b9
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: 4a90724664dca4741b1c36e30c3a33e0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d66fd9bcf94b713419711d62874e7d55, type: 2}

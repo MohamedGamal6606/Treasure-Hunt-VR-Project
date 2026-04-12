@@ -6,10 +6,10 @@ public class SettingsMenuToggle : MonoBehaviour
 {
     public GameObject settingsCanvas;
     public XRInteractionManager interactionManager;
-
+    public InputActionReference triggerAction;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (triggerAction.action.WasPressedThisFrame())
         {
             ToggleMenu();
         }

@@ -31,10 +31,15 @@ public class ExplosionZone : MonoBehaviour
             smokeEffect.SetActive(true);
 
             ParticleSystem smokePS = smokeEffect.GetComponent<ParticleSystem>();
+            AudioSource smokeAudio = smokeEffect.GetComponent<AudioSource>();
             if (smokePS != null)
             {
                 smokePS.Clear();
                 smokePS.Play();
+            }
+            if (smokeAudio != null)
+            {
+                smokeAudio.Play();
             }
         }
 
