@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject winObject;          // GameObject to activate when all hit
     public GameObject Chest;
 
+    public AudioClip flintlockAppearSound;
 
     // Update is called once per frame
     void Update()
@@ -30,9 +31,16 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void disappear()
+    {
+        winObject.SetActive(false);
+        WinManager.Instance.isIslandWon = true;
+    }
+
     void showFlintlock()
     {
         flintlock.SetActive(true);
+        flintlock.GetComponent<AudioSource>().PlayOneShot(flintlockAppearSound);
     }
 
     public void OnTargetKnockedOut()
@@ -43,7 +51,7 @@ public class GameManager : MonoBehaviour
         }
 
         winObject.SetActive(true);
-        WinManager.Instance.isIslandWon = true;
+        
     }
 
 

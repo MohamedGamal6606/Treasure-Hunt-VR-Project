@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinManager : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class WinManager : MonoBehaviour
         if(isShipWon && isIslandWon && isCaveWon)
         {
                         isGameWon = true;
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Main Menu"));
         }
     }
 }

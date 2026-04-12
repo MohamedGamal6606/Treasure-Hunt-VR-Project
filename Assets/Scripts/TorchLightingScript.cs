@@ -12,7 +12,8 @@ public class TorchLightingScript : MonoBehaviour
         if (other.gameObject.CompareTag("Torch"))
         {
             fireParticles.SetActive(true);
-            gameManager.isTorchLit.Add(torchName);
+            if(gameManager != null && !gameManager.isTorchLit.Contains(torchName))
+                gameManager.isTorchLit.Add(torchName);
         }
     }
 }
