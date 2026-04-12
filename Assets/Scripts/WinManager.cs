@@ -11,29 +11,21 @@ public class WinManager : MonoBehaviour
 
     void Awake()
     {
-        // If an instance already exists, destroy this duplicate
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        if(isShipWon && isIslandWon && isCaveWon)
+        if (!isGameWon && isShipWon && isIslandWon && isCaveWon)
         {
-                        isGameWon = true;
-                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("End Scene"));
+            isGameWon = true;
+            SceneManager.LoadScene("End Scene");
         }
     }
 }

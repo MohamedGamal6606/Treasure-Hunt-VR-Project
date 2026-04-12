@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private bool isSolved = false;
     public KnockoutTarget[] targets;      // Assign all dummies in Inspector
     public GameObject winObject;          // GameObject to activate when all hit
-    public GameObject Chest;
+
 
     public AudioClip flintlockAppearSound;
 
@@ -23,10 +23,6 @@ public class GameManager : MonoBehaviour
             showFlintlock();
         }
 
-        if(WinManager.Instance.isGameWon)
-        {
-            Chest.SetActive(true);
-        }
 
 
     }
